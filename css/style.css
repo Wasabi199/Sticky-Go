@@ -184,6 +184,16 @@ header input{
     justify-content: space-around;
 }
 
+.row1 img{
+    width: 150px;
+    height: 150px;
+}
+
+.row2 img{
+    width: 150px;
+    height: 150px;
+}
+
 .user-name{
     text-align: center;
 }
