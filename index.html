@@ -16,10 +16,43 @@
             <li><a href="">About Us</a></li>
             <li><a href="">Contact</a></li>
             <input type="text" placeholder="Search...">
-            <a href=""><i class="fa-solid fa-bell"></i></a>
-            <a href=""><i class="fa-solid fa-user"></i></a>
+            <div class="a" onclick="toggleNotifi()"><i class="fa-solid fa-bell" ></i></div>
+            <div class="a" id="login"><i class="fa-solid fa-user"></i></div>
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
         </ul>
+        <div class="notifi-box" id="box">
+          <h2>Notifications <span>5</span></h2>
+          <div class="notifi-item">
+            <div class="text">
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <div class="text">
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+        </div>
     </header>
 
     
@@ -185,14 +218,98 @@
       </div>
     </div>
 
+    <div class="bg-modal">
+      <div class="modal-contents">
+        <div class="loginHeader">
+          <img src="images/StickyGo-Logo.png"/>
+          <div class="close">+</div>
+        </div>
+        
+        <form class="form" action="">
+          <span>Email</span>
+          <input type="text" >
+          <span>Password</span>
+          <input type="password" >
+          <div>
+            <a href="">Forgot Password?</a>
+          </div>
+            
+            <a href="#" class="buttonLogin">Log in</a>
+            <div id="signup" class="buttonSignup">Sign up</a>
+    
+       
+        </form>
+    
+      </div>
+    </div>
+
+    <div class="bg-modalSignup">
+      <div class="modal-contents">
+        <div class="loginHeader">
+          <img src="images/StickyGo-Logo.png"/>
+          <div class="closeSignup">+</div>
+        </div>
+        
+        <form class="form" action="">
+          <span>Emails</span>
+          <input type="text" >
+          <span>Username</span>
+          <input type="text" >
+          <span>Password</span>
+          <input type="password" >
+          <div>
+            <a href="">Forgot Password?</a>
+          </div>
+            
+            <a href="#" class="buttonLogin">Sign Up</a>
+            <p>Already have an account?<a href="#"> Log in</a></p>
+        </form>
+    
+      </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/aa83f0c211.js" crossorigin="anonymous"></script>
     <script type="text/javascript" >
       
       window.addEventListener ("scroll",function(){
           var header = document.querySelector("header");
           header.classList.toggle("sticky", window.scrollY > 0);
-      })
+      });
 
+      // Notification
+      var box  = document.getElementById('box');
+      var down = false;
+      function toggleNotifi(){
+        if (down) {
+          box.style.height  = '0px';
+          box.style.opacity = 0;
+          down = false;
+        }else {
+          box.style.height  = '250px';
+          box.style.opacity = 1;
+          down = true;
+        }
+      }
+      // Modal
+      document.getElementById('login').addEventListener("click", function() {
+      document.querySelector('.bg-modal').style.display = "flex";
+    });
+
+      document.querySelector('.close').addEventListener("click", function() {
+      document.querySelector('.bg-modal').style.display = "none";
+      console.log('clicked');
+    });
+
+      document.getElementById('signup').addEventListener("click", function() {
+      document.querySelector('.bg-modalSignup').style.display = "flex";
+      console.log('clicked');
+    });
+
+      document.querySelector('.closeSignup').addEventListener("click", function() {
+      document.querySelector('.bg-modalSignup').style.display = "none";
+      
+      console.log('clicked');
+    });
   </script>
 
   </body>

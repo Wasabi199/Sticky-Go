@@ -53,10 +53,13 @@ header ul li a{
     font-weight: 500px;
 }
 
-header a{
+header a, .a{
     margin-left: 9px;
     margin-right: 9px;
     color: #EA3F63 ;
+}
+.a{
+    cursor: pointer;
 }
 
 header input{
@@ -67,6 +70,170 @@ header input{
     padding-right: 2px;
     padding: 3px;
 }
+
+/* notification Start */
+.notifi-box {
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+    background-color: white;
+	position: absolute;
+	top: 63px;
+	right: 35px;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.notifi-box h2 {
+	font-size: 14px;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #999;
+}
+.notifi-box h2 span {
+	color: #f00;
+}
+.notifi-item {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 5px 5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.notifi-item:hover {
+	background-color: #aaa;
+    
+}
+
+.notifi-item .text p {
+	color: #000000;
+	font-size: 12px;
+}
+.notifi-item .text {
+	color: #000000;
+	font-size: 12px;
+}
+
+/* Notification End */
+
+/* Modal Login Start*/
+.bg-modal,.bg-modalSignup {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.bg-modalSignup {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.loginHeader {
+    border-bottom:1px solid #000000;
+   
+}
+.loginHeader img{
+    height: 25px;
+}
+.form{
+    margin-top: 15px;
+}
+.modal-contents {
+	height: 500px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 0px auto;
+	display: block;
+	width: 75%;
+	padding: 5px;
+	border: 1px solid gray;
+}
+.form span{
+    display: block;
+    text-align: left;
+    margin-left: 57px;
+    margin-top: 10px;
+   
+}
+.form input{
+   background-color:#eee;
+   border-radius: 10px;
+   
+}
+.form div  a{
+    display: block;
+    text-align: right;
+    margin-right: 57px;
+    margin-top: 10px;
+    text-decoration: none;
+   
+}
+
+.buttonLogin {
+	background-color: magenta;
+	border: 2px solid white;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 75px;
+	display: inline-block;
+	width: 75%;
+}
+.buttonSignup {
+	background-color: #FEC63D;
+	border: 2px solid white;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+	width: 75%;
+    cursor: pointer;
+}
+.buttonLogin:hover{
+    background-color: white;
+    color: magenta;
+    border: 2px solid magenta; 
+}
+ .buttonSignup:hover{
+    background-color: white;
+    color: #FEC63D;
+    border: 2px solid #FEC63D; 
+}
+
+.close, .closeSignup {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	/* &:hover {
+		color: #666;
+	} */
+}
+.close:hover{
+    color: #666;
+}
+/* Modal Login End */
+
 
 #section1{
     background: url('../images/Bgm-Stickers.png');
