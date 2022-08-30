@@ -55,7 +55,7 @@ header ul li a {
   letter-spacing: none;
   font-size: medium;
   font-weight: 100px;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 header a,
@@ -428,22 +428,10 @@ input {
 }
 
 .footer {
-  height: 200px;
+  height: 150px;
   margin-top: 40px;
   padding-left: 20px;
   position: relative;
-}
-
-.footer .footer-bottom {
-  height: 50px;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-  left: 0px;
-  padding-top: 15px;
-  color: gray;
-  background-color: #1f2929;
 }
 
 .socials a {
