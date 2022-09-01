@@ -25,6 +25,7 @@ header {
   z-index: 1000000;
   padding-right: 50px;
   padding-left: 50px;
+  box-shadow: 0px -21px 44px 15px rgba(0,0,0,0.43);
 }
 
 header .logo {
@@ -254,85 +255,60 @@ input {
 /* Modal Login End */
 
 #section1 {
-  background: url("../images/Bgm-Stickers.png");
-  background-size: cover;
-  height: 600px;
-  margin-top: 65px;
-}
-
-.sp {
-  background-color: #fcd062;
-  border: none;
-  border-radius: 5px;
-  color: #e93578;
-  padding: 20px 60px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 4px 2px;
-  cursor: pointer;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  font-size: 25px;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-}
-
-.seemore {
-  color: #e93578;
-  margin-right: 11.5%;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-#section2 {
   display: inline-flex;
-  justify-content: space-between;
   width: 100%;
   background-color: white;
   height: 5px;
   padding-bottom: 20px;
   padding-top: 20px;
-  padding-left: 20px;
   font-weight: bold;
+  margin-top: 10px;
 }
-.popular {
-  margin-left: 3%;
-  margin-top: 50px;
 
+.results{
+  margin-top: 70px;
+  color: #7a7a7a;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.stickers {
+  margin-left: 150px;
+  margin-top: 65px;
   font-size: 20px;
 }
-#section3 {
+
+.categories {
   display: inline-flex;
   justify-content: space-between;
-  width: 100%;
-  background-color: white;
-  height: 5px;
-  padding-top: 20px;
-  padding-left: 20px;
-  font-weight: bold;
+  white-space: nowrap;
 }
 
-#section4 {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: white;
-  height: 5px;
-  padding-top: 20px;
-  padding-left: 20px;
+.categories p{
   font-weight: bold;
+  margin-left: 20px;
 }
 
-.image-banner {
+.categories ul{
+  margin-right: 30px;
+}
+
+.categories ul li{
+  margin-left: 35px;
+  list-style-type: none;
+}
+.categories ul li a{
+  margin-top: 10px;
+cursor: pointer;
+text-decoration: none;
+color: black;
+}
+
+.categories i{
+  color: rgb(236, 223, 37);
+}
+
+.image-banner-main{
   width: 100%;
   margin-top: 40px;
 }
@@ -352,10 +328,6 @@ input {
   color: skyblue;
 }
 
-.column2 {
-  float: left;
-  padding: 10px;
-}
 
 .column1 img {
   border: 2px solid #000000;
@@ -363,26 +335,10 @@ input {
   margin: 5px;
 }
 
-.column2 img {
-  border-radius: 50%;
-  border: 2px solid #000000;
-  padding: 3px;
-  margin: 5px;
-}
-
-.row2::after {
-  content: "";
-  clear: both;
-  align-items: center;
-}
-
-.row1,
-.row2 {
+.row1{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 10px;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 .row1 img {
@@ -390,27 +346,9 @@ input {
   height: 200px;
 }
 
-.row2 img {
-  width: 150px;
-  height: 150px;
-}
-
-.user-name {
-  text-align: center;
-}
-
 .item-name,
 .price {
   padding-left: 20px;
-}
-
-.follow {
-  width: 80%;
-  border: 1px solid #232323;
-  border-radius: 8px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-top: 5px;
 }
 
 .item {
@@ -443,4 +381,36 @@ input {
 
 .tm{
   color: #999;
+}
+
+.columns{
+    margin-top: 20px;
+}
+
+.select-options{
+    margin-top: 70px;
+    padding-right: 20px;
+    margin-left: 65%;
+    white-space: nowrap;
+}
+
+
+.container{
+  display: flex;
+}
+
+.next{
+  float: right;
+  margin-right: 20px;
+}
+
+.next a{
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #000000;
+}
+
+.next i{
+  margin-left: 10px;
 }
